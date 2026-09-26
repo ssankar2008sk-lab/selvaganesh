@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selva Ganesh Auto Stores - Premium Auto Parts</title>
+    <style>
+        /* Bright, Energetic, Colorful Theme */
+        :root {
+            --primary-red: #e63946;
+            --primary-blue: #1d3557;
+            --light-blue: #457b9d;
+            --accent-color: #fca311;
+            --bg-color: #f8f9fa;
+            --text-main: #2b2d42;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section with Single Image and Colorful Gradient Overlay */
+        /* Hero Section with Clear Background Image */
+        /* Hero Section with Clear Background Image */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('background.avif') center/cover fixed;
+            color: white;
+            text-align: center;
+            padding: 130px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        h1.shop-name {
+            font-family: 'Arial Black', Impact, sans-serif;
+            font-size: 3em; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h1.shop-tagline {
+            font-size: 1.8em;
+            margin-top: 5px;
+            color: var(--accent-color);
+            font-weight: normal;
+        }
+
+        /* Colorful Sections */
+        .section {
+            padding: 45px 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--primary-red);
+        }
+
+        .section h2 {
+            display: inline-block;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Grid for Categories */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: linear-gradient(to bottom right, #ffffff, #f1f5f9);
+            padding: 25px 15px;
+            border-radius: 10px;
+            width: 170px;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--primary-blue);
+            border: 1px solid #e2e8f0;
+            border-bottom: 4px solid var(--light-blue);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(29, 53, 87, 0.15);
+            border-bottom-color: var(--primary-red);
+            color: var(--primary-red);
+        }
+
+        /* Flowchart Steps */
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 6px solid var(--primary-red);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .step strong {
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        /* Form Inputs */
+        .form-container, .map-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 2px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: var(--primary-red);
+            outline: none;
+        }
+
+        button {
+            background-color: #25D366; /* WhatsApp Green */
+            color: white;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-blue);
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 5px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+   <!-- HERO SECTION -->
+    <div class="hero">
+        <h1 class="shop-name">Selva Ganesh Auto Stores</h1>
+        <h2 class="shop-tagline" style="font-size: 1.8em; color: var(--accent-color); font-weight: normal; margin-top: 10px; margin-bottom: 5px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Your Trusted Auto Parts Supplier</h2>
+        <p style="font-size: 1.2em; color: white; margin-top: 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">The region's most extensive inventory for all your automobile needs.</p>
+    </div>
+
+    <!-- WHAT WE CARRY -->
+    <div class="section">
+        <h2>What We Carry</h2>
+        <div class="grid">
+            <div class="card">Engine Parts</div>
+            <div class="card">Electrical Systems</div>
+            <div class="card">Agri Implements</div>
+            <div class="card">High-Grade Oils</div>
+            <div class="card">Suspension Coils</div>
+            <div class="card">Brake Calipers</div>
+        </div>
+    </div>
+
+    <!-- FLOWCHART 1: REQUEST A PART -->
+    <div class="section">
+        <h2>Fast-Track Your Order</h2>
+        <div class="flowchart">
+            <div class="step"><strong>1. Identify Vehicle:</strong> Have your Year, Make, and Model ready for a precise fit.</div>
+            <div class="step"><strong>2. Send Details:</strong> Use the direct WhatsApp form below to ping our counter immediately.</div>
+            <div class="step"><strong>3. Instant Pickup:</strong> We reserve the part so you can skip the line in-store.</div>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FORM -->
+    <div class="section">
+        <h2>Direct Parts Request</h2>
+        <div class="form-container">
+            <form id="whatsappForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+
+                <label for="vehicle">Vehicle (Year/Make/Model)</label>
+                <input type="text" id="vehicle" required placeholder="e.g., 2018 Honda Civic">
+
+                <label for="part">Part Required</label>
+                <textarea id="part" required placeholder="Describe the part..." rows="3"></textarea>
+
+                <button type="submit">Ping Us on WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOCATION & MAP -->
+    <div class="section">
+        <h2>Our Location</h2>
+        <p><strong>Address:</strong> State Bank Colony, Dindigul Road, Batlagundu, Tamil Nadu</p>
+        <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 9:00 PM</p>
+        <div class="map-container">
+            <!-- Correctly working Google Maps Embed for Selvaganesh Auto Store -->
+            "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.113274391482!2d77.76641507400934!3d10.171447270063236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b074fa2651ef399%3A0xd3038ecc4ac7d06e!2sSelvaganesh%20Auto%20Store!5e0!3m2!1sen!2sin!4v1790412652505!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Selva Ganesh Auto Stores. All Rights Reserved.</p>
+    </div>
+
+    <!-- WHATSAPP SCRIPT -->
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const vehicle = document.getElementById('vehicle').value;
+            const part = document.getElementById('part').value;
+
+            const message = `*NEW PART REQUEST*\n\n*Name:* ${name}\n*Vehicle:* ${vehicle}\n*Part:* ${part}`;
+            
+            // Replace with your actual 10-digit number. Leave the 91 intact.
+            const shopNumber = "9047225558"; 
+            
+            const whatsappLink = `https://wa.me/${shopNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
+        });
+    </script>
+</body>
+</html>
