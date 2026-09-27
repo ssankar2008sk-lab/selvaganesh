@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selva Ganesh Auto Stores - Premium Auto Parts</title>
+    <style>
+        /* Base Styles & Resets */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Fluid Images and Iframes */
+        img, iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #111;
+            /* Placeholder for your actual background image */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.avif'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 4px solid #ff9900;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            color: #ff9900;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* Section Headers */
+        .section-title {
+            text-align: center;
+            color: #1a365d;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff9900;
+            margin: 10px auto 0;
+        }
+
+        /* What We Carry (Grid) */
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-weight: bold;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 30px); /* Desktop: 3 columns */
+        }
+
+        /* Fast Track Order */
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .step {
+            flex: 1;
+            text-align: center;
+        }
+
+        .step h3 {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        /* Form Section */
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        /* Touch-optimized Form Elements */
+        input[type="text"], 
+        textarea, 
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px; /* Prevents auto-zoom on iOS */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #128C7E;
+        }
+
+        /* Location Section */
+        .location-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .map-container {
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Mobile Optimization (Media Queries) */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero h2 {
+                font-size: 22px;
+            }
+            
+            .service-item {
+                flex: 1 1 100%; /* Stack items vertically on mobile */
+            }
+
+            .steps-container {
+                flex-direction: column;
+            }
+
+            .step {
+                margin-bottom: 20px;
+            }
+            .step:last-child {
+                margin-bottom: 0;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>SELVA GANESH AUTO STORES</h1>
+        <h2>Your Trusted Auto Parts Supplier</h2>
+        <p>The region's most extensive inventory for all your automobile needs.</p>
+    </header>
+
+    <div class="container">
+        <!-- What We Carry -->
+        <section id="inventory">
+            <h2 class="section-title">What We Carry</h2>
+            <div class="services-grid">
+                <div class="service-item">Engine Parts</div>
+                <div class="service-item">Electrical Systems</div>
+                <div class="service-item">Agri Implements</div>
+                <div class="service-item">High-Grade Oils</div>
+                <div class="service-item">Suspension Coils</div>
+                <div class="service-item">Brake Calipers</div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <!-- Fast-Track Order -->
+        <section id="how-it-works">
+            <h2 class="section-title">Fast-Track Your Order</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <h3>1. Identify Vehicle</h3>
+                    <p>Have your Year, Make, and Model ready for a precise fit.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Send Details</h3>
+                    <p>Use the direct WhatsApp form below to ping our counter immediately.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Instant Pickup</h3>
+                    <p>We reserve the part so you can skip the line in-store.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2 class="section-title">Direct Parts Request</h2>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle">Vehicle (Year/Make/Model) *</label>
+                        <input type="text" id="vehicle" name="vehicle" placeholder="e.g., 2018 Honda Civic" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="part">Part Required *</label>
+                        <textarea id="part" name="part" placeholder="Describe the part..." required></textarea>
+                    </div>
+                    <button type="submit">PING US ON WHATSAPP</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <!-- Location & Map -->
+        <section id="location">
+            <h2 class="section-title">Our Location</h2>
+            <div class="location-info">
+                <p><strong>Address:</strong> State Bank Colony, Dindigul Road, Batlagundu, Tamil Nadu</p>
+                <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 9:00 PM</p>
+            </div>
+            <div class="map-container">
+                <!-- Ensure width is 100% and height is defined -->
+                <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Selva Ganesh Auto Stores. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
